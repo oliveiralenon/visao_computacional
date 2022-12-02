@@ -17,7 +17,7 @@ while True:
     # Desenha o retângulo
     for face in deteccoes:
         l, t, r, b = face.left(), face.top(), face.right(), face.bottom()
-        cv2.rectangle(frame, (l, t), (r, b), (0, 255, 255), 2)
+        cv2.rectangle(frame, (l, t), (r, b), (0, 0, 255), 2)
 
     cv2.imshow('Video', frame)
 
