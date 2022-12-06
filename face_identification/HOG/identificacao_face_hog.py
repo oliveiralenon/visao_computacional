@@ -18,9 +18,10 @@ while True:
     for face in deteccoes:
         l, t, r, b = face.left(), face.top(), face.right(), face.bottom()
         cv2.rectangle(frame, (l, t), (r, b), (0, 0, 255), 2)
-
+    
     cv2.imshow('Video', frame)
-
+    
+    # Finaliza o processo da webcam ao apertar a tecla 'q'
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
